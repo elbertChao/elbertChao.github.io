@@ -11,7 +11,7 @@ function AboutCard() {
             Hello! I'm <span className="purple">Elbert Chao</span>
             . I am born in <span className="purple">Canada</span>, and my ethnicity is <span className="purple">Chinese</span>.
             <br />
-            I am currently a full-time student at the <span className="purple">University of Western Ontario</span> studying <span className="purple">Software Engineering.</span>
+            I am currently a full-time student at the <span className="purple">University of Western Ontario</span> studying <span className="purple">Software Engineering (CGPA: 3.7).</span>
             <br />
             I aspire to be a future software developer and am currently looking for internships to gain experience in the field.
             <br />
@@ -30,10 +30,10 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          {/* <p style={{ color: "rgb(155 126 172)" }}>
             "Strive to build things that make a difference!"{" "}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Elbert</footer> */}
         </blockquote>
       </Card.Body>
     </Card>
