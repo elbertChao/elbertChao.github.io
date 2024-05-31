@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import spg from "../../Assets/Projects/spg.jpg";
 import cheer from "../../Assets/Projects/cheer.png";
+import pygamePirates from "../../Assets/Projects/pygamePirates.png";
 import superhero from "../../Assets/Projects/superhero.png";
 import ifinance from "../../Assets/Projects/ifinance.png";
 // import bitsOfCode from "../../Assets/Projects/blog.png";
@@ -38,6 +39,17 @@ function Projects() {
               description="An online web application hosted on GCP built with the MERN stack that allows special needs kids to communicate with their friends in the Cheer Group through a chat feature. The app also includes a calendar feature to keep track of events, a gallery feature to share photos, and an admin feature to monitor user activity."
               ghLink=""
               demoLink="https://se3350-project-group22-u6a2qlor5a-uk.a.run.app/"              
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pygamePirates}
+              isBlog={false}
+              title="Pygame Pirates"
+              description="A 2D game built with Pygame that allows players to run around a map, fighting enemiesm, collecting coins, and upgrading their character. There are 3 different levels within the game with the last level having a final skeleton boss. This was a major project that taught me the fundamentals of python and game development."
+              ghLink="https://github.com/PygamePirates/Pygame-Pirates"
+              demoLink="https://www.youtube.com/watch?v=i6ewJrxDoo8"              
             />
           </Col>
 
