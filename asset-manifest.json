@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ed4efb14.css",
-    "main.js": "/static/js/main.689c973e.js",
+    "main.js": "/static/js/main.190dc7ed.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/pygamePirates.png": "/static/media/pygamePirates.ed8aac0e24e7e498b2a7.png",
@@ -18,12 +18,12 @@
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.ed4efb14.css.map": "/static/css/main.ed4efb14.css.map",
-    "main.689c973e.js.map": "/static/js/main.689c973e.js.map",
+    "main.190dc7ed.js.map": "/static/js/main.190dc7ed.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ed4efb14.css",
-    "static/js/main.689c973e.js"
+    "static/js/main.190dc7ed.js"
   ]
 }
