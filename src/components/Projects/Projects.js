@@ -26,8 +26,8 @@ function Projects() {
               imgPath={spg}
               isBlog={false}
               title="Spotify Playlist Generator"
-              description="An automated playlist generator that utilizes Spotify's API while leverging Open AI's API to give listeners new music regardless of popularity based on an input track or gpt prompt"
-              demoLink="https://drive.google.com/file/d/1WKf41MjntIHcZse4FBi-M2h7wzikZLag/view"
+              description="An automated playlist generator that utilizes Spotify's API while leverging Open AI's API to give listeners new music regardless of popularity based on an input track or gpt prompt. Along with a team of 6 we presented this project at the Toronto Tech Expo. competing against 15+ other teams. Placing first in the entertainment category!"
+              thesisLink="https://drive.google.com/file/d/1WKf41MjntIHcZse4FBi-M2h7wzikZLag/view"
             />
           </Col>
 
@@ -36,7 +36,7 @@ function Projects() {
               imgPath={cheer}
               isBlog={false}
               title="Cheer Project"
-              description="An online web application hosted on GCP built with the MERN stack that allows special needs kids to communicate with their friends in the Cheer Group through a chat feature. The app also includes a calendar feature to keep track of events, a gallery feature to share photos, and an admin feature to monitor user activity."
+              description="An online web application hosted on GCP built with the MERN stack that allows special needs kids to communicate with their friends in the Cheer Group through a chat feature and is monitored by the admin. This project not only taught me more about the MERN stack but also taught me the ins and outs of working with a team through an agile methodology using Jira and Confluence"
               ghLink=""
               demoLink="https://se3350-project-group22-u6a2qlor5a-uk.a.run.app/"              
             />

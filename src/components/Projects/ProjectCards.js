@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
+import { FaFileAlt } from "react-icons/fa";
 
 function ProjectCards(props) {
   return (
@@ -33,6 +34,21 @@ function ProjectCards(props) {
           >
             <CgWebsite /> &nbsp;
             {"Demo"}
+          </Button>
+        )}
+
+        {"\n"}
+        {"\n"}
+
+        {props.thesisLink && (
+            <Button
+            variant="primary"
+            href={props.thesisLink}
+            target="_blank"
+            style={{ marginLeft: "10px" }}
+          >
+            <FaFileAlt /> &nbsp;
+            {"Thesis"}
           </Button>
         )}
       </Card.Body>
