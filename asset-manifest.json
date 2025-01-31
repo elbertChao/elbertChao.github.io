@@ -1,11 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.f156c0a0.css",
-    "main.js": "/static/js/main.878e0021.js",
+    "main.js": "/static/js/main.9c76b084.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/pygamePirates.png": "/static/media/pygamePirates.ed8aac0e24e7e498b2a7.png",
-    "static/media/ResElbertC.pdf": "/static/media/ResElbertC.2c102a689bfadff8b66d.pdf",
+    "static/media/ResElbertC.pdf": "/static/media/ResElbertC.10b1b151654e6d494e44.pdf",
     "static/media/superhero.png": "/static/media/superhero.d54b2df14521d7d2f825.png",
     "static/media/spg.jpg": "/static/media/spg.088ad8947aece88bf6a7.jpg",
     "static/media/cheer.png": "/static/media/cheer.269b12aa6e1bbc2e7635.png",
@@ -18,12 +18,12 @@
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.f156c0a0.css.map": "/static/css/main.f156c0a0.css.map",
-    "main.878e0021.js.map": "/static/js/main.878e0021.js.map",
+    "main.9c76b084.js.map": "/static/js/main.9c76b084.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f156c0a0.css",
-    "static/js/main.878e0021.js"
+    "static/js/main.9c76b084.js"
   ]
 }
