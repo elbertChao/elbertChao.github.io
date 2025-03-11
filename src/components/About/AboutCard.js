@@ -8,12 +8,17 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hello! I'm <span className="purple">Elbert Chao</span>
-            . I am born in <span className="purple">Canada</span>, and my ethnicity is <span className="purple">Chinese</span>.
+            Hello! My name is <span className="purple">Elbert Chao</span>
+            . I am a <span className="purple">Canadian of Chinese descent</span> and currently reside in <span className="purple">Toronto, Ontario</span>.
             <br />
-            I am currently a full-time student at the <span className="purple">University of Western Ontario</span> studying <span className="purple">Software Engineering (CGPA: 3.7).</span>
             <br />
-            I aspire to be a future software developer and am currently looking for internships to gain experience in the field.
+            Currently, I am a full-time <span className="purple">Software Engineering student</span> <span className="purple">University of Western Ontario</span>
+            , maintaining a <span className="purple">CGPA of 3.7 </span>
+            and currently in my fourth year with a<span className="purple"> 3.9 GPA.</span>
+            <br />
+            <br />
+            I aspire to be a future software developer possibly in either <span className="purple">Front-End/Full-Stack or Machine Learning</span> and am currently 
+            looking for internships to gain experience in the field.
             <br />
             <br />
             Apart from coding, my hobbies are:

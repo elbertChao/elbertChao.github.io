@@ -12,7 +12,8 @@ import {
 } from "react-icons/di";
 import {
   SiCss3,
-  SiHtml5
+  SiHtml5,
+  SiFlask
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -35,6 +36,9 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <SiFlask />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -45,9 +49,6 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
       </Col>
     </Row>
   );

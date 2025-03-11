@@ -32,16 +32,20 @@ function Home2() {
               <br />
               <br />I usually code in 
               <i>
-                <b className="purple"> Javascript and Python</b>
+                <b className="purple"> Python and JavaScript</b>
                 , but I have also worked with other languages like
-                <b className="purple"> C++ and Java</b>
+                <b className="purple"> Java, HTML/CSS, and SQL</b>
                 .
               </i>
               <br />
               <br />
               I have experience in building web applications with the MERN Stack
               <i>
-                <b className="purple"> (MongoDB, Express, React, Node.js) </b>
+                <b className="purple"> (MongoDB, Express, React, Node.js). </b>
+              </i>
+              As well as experience in building machine learning models with
+              <i>
+                <b className="purple"> PyTorch. </b>
               </i>
               <br />
               <br />

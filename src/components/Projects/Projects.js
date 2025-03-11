@@ -7,6 +7,7 @@ import cheer from "../../Assets/Projects/cheer.png";
 import pygamePirates from "../../Assets/Projects/pygamePirates.png";
 import superhero from "../../Assets/Projects/superhero.png";
 import ifinance from "../../Assets/Projects/ifinance.png";
+import strawberryWeb from "../../Assets/Projects/berryVision-v1.0.png";
 // import bitsOfCode from "../../Assets/Projects/blog.png";
 
 function Projects() {
@@ -18,9 +19,19 @@ function Projects() {
           My Recent <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={strawberryWeb}
+              isBlog={false}
+              title="Berry Vision v1.0"
+              description="BerryVision v1.0 is a full-stack web application designed to help farmers monitor the health of their strawberries using machine learning. By analyzing images, the app detects ripeness and potential diseases, providing an intuitive interface for real-time insights. Built with Next.js, Flask, Python, and Tailwind CSS, the project was developed as part of the FAST Research Group and is now live on Western University’s domain. Future updates aim to integrate live camera feeds for automated disease detection and early intervention."
+              demoLink="https://strawberry.uwo.ca/"   
+            />
+          </Col>
+          
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={spg}

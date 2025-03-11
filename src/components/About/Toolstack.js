@@ -5,7 +5,10 @@ import {
   SiDiscord,
   SiAmazonaws,
   SiInsomnia,
+  SiDocker,
+  SiGooglecloud,
 } from "react-icons/si";
+import { FaUnity } from "react-icons/fa";
 
 function Toolstack() {
   return (
@@ -21,6 +24,15 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAmazonaws />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiDocker />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <FaUnity />
       </Col>
     </Row>
   );
