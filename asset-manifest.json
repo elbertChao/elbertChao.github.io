@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.0ea88666.css",
-    "main.js": "/static/js/main.3bd6b648.js",
+    "main.js": "/static/js/main.5c8a07c6.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/home-back.png": "/static/media/home-back.b79ed42e005d170c4af9.png",
     "static/media/pygamePirates.png": "/static/media/pygamePirates.ed8aac0e24e7e498b2a7.png",
     "static/media/berryVision-v1.0.png": "/static/media/berryVision-v1.0.ab285d7429a27408439a.png",
+    "static/media/PortfolioImg.png": "/static/media/PortfolioImg.d0b80989da45cee64189.png",
     "static/media/superhero.png": "/static/media/superhero.d54b2df14521d7d2f825.png",
     "static/media/spg.jpg": "/static/media/spg.088ad8947aece88bf6a7.jpg",
     "static/media/ResElbertC.pdf": "/static/media/ResElbertC.0d01245dca3e6d7462e8.pdf",
@@ -15,16 +16,15 @@
     "static/media/about.png": "/static/media/about.aee0f771fbfc1e7b8fa8.png",
     "static/media/ifinance.png": "/static/media/ifinance.efc92485b05aedd84aa5.png",
     "static/media/logo.png": "/static/media/logo.cc91d960fe8c646a1d73.png",
-    "static/media/me.svg": "/static/media/me.ce454236db9cf27b653bf20805d6312b.svg",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.0ea88666.css.map": "/static/css/main.0ea88666.css.map",
-    "main.3bd6b648.js.map": "/static/js/main.3bd6b648.js.map",
+    "main.5c8a07c6.js.map": "/static/js/main.5c8a07c6.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0ea88666.css",
-    "static/js/main.3bd6b648.js"
+    "static/js/main.5c8a07c6.js"
   ]
 }
