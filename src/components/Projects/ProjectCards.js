@@ -15,15 +15,13 @@ function ProjectCards(props) {
           {props.description}
         </Card.Text>
 
+        <div className="mt-auto">
         {props.ghLink && (
           <Button variant="primary" href={props.ghLink} target="_blank">
             <BsGithub /> &nbsp;
             {props.isBlog ? "Blog" : "GitHub"}
           </Button>
         )}
-
-        {"\n"}
-        {"\n"}
 
         {!props.isBlog && props.demoLink && (
           <Button
@@ -32,25 +30,21 @@ function ProjectCards(props) {
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <CgWebsite /> &nbsp;
-            {"Demo"}
+            <CgWebsite /> &nbsp;Demo
           </Button>
         )}
 
-        {"\n"}
-        {"\n"}
-
         {props.thesisLink && (
-            <Button
+          <Button
             variant="primary"
             href={props.thesisLink}
             target="_blank"
             style={{ marginLeft: "10px" }}
           >
-            <FaFileAlt /> &nbsp;
-            {"Thesis"}
+            <FaFileAlt /> &nbsp;Thesis
           </Button>
         )}
+      </div>
       </Card.Body>
     </Card>
   );

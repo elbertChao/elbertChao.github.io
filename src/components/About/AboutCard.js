@@ -12,16 +12,15 @@ function AboutCard() {
             . I am a <span className="purple">Canadian of Chinese descent</span> and currently reside in <span className="purple">Toronto, Ontario</span>.
             <br />
             <br />
-            Currently, I am a full-time <span className="purple">Software Engineering student</span> <span className="purple">University of Western Ontario</span>
-            , maintaining a <span className="purple">CGPA of 3.7 </span>
-            and currently in my fourth year with a<span className="purple"> 3.9 GPA.</span>
+            Currently, I am doing an part-time internship at <span className="purple">PM Accelerator</span> as a Software Engineer - AI/ML Intern.
+            Recently I have graduated <span className="purple">Western University</span> with a <span className="purple">CGPA of 3.7 </span>
+            and finished strong with a <span className="purple"> 3.9 GPA.</span> in my final year.
             <br />
             <br />
-            I aspire to be a future software developer possibly in either <span className="purple">Front-End/Full-Stack or Machine Learning</span> and am currently 
-            looking for internships to gain experience in the field.
+            I aspire to be a future software developer possibly in either <span className="purple">Front-End/Full-Stack or Machine Learning.</span>
             <br />
             <br />
-            Apart from coding, my hobbies are:
+            Apart from coding, my hobbies involve:
           </p>
           <ul>
             <li className="about-activity">
