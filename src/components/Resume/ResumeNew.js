@@ -17,8 +17,15 @@ function ResumeNew() {
 
   return (
     <div>
-      <Container fluid className="resume-section">
+      <Container fluid className="resume-section" id="resume">
         <Particle />
+        <Container className="resume-content">
+          <p className="intro-badge">Resume</p>
+          <h1 className="project-heading">
+            My <strong className="purple">Experience</strong> Snapshot
+          </h1>
+          <p className="section-tagline">Download my CV or preview it directly below.</p>
+        </Container>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"

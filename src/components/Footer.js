@@ -1,13 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
+
   return (
     <Container fluid className="footer">
       <Row>
@@ -15,15 +13,15 @@ function Footer() {
           <h3>Elbert Chao</h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} EC</h3>
+          <h3>Copyright &copy; {year} EC</h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/elbertChao"
-                style={{ color: "white" }}
-                target="_blank" 
+                className="footer-social-link"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -31,9 +29,9 @@ function Footer() {
             </li>
             <li className="social-icons">
               <a
-                href="https://www.linkedin.com/in/elbert-chao/"
-                style={{ color: "white" }}
-                target="_blank" 
+                href="https://www.linkedin.com/in/elbertc/"
+                className="footer-social-link"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
