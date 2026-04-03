@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b4ee5a54.css",
-    "main.js": "/static/js/main.1d43fa77.js",
+    "main.js": "/static/js/main.5b283aad.js",
     "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/home-back.png": "/static/media/home-back.b79ed42e005d170c4af9.png",
@@ -10,7 +10,7 @@
     "static/media/berryVision-v1.0.png": "/static/media/berryVision-v1.0.ab285d7429a27408439a.png",
     "static/media/sr-medt.png": "/static/media/sr-medt.edfa2c39a96c81c2201b.png",
     "static/media/warren_buffett.jpg": "/static/media/warren_buffett.0e4b66312774e3a879c4.jpg",
-    "static/media/ResElbertC.pdf": "/static/media/ResElbertC.f37fc405ae921edf4872.pdf",
+    "static/media/ResElbertC.pdf": "/static/media/ResElbertC.124a3cd44ae76652c8b2.pdf",
     "static/media/spg.jpg": "/static/media/spg.088ad8947aece88bf6a7.jpg",
     "static/media/job_assist.jpg": "/static/media/job_assist.91b61676e14a3ac71fe6.jpg",
     "static/media/home-main.svg": "/static/media/home-main.359935c39288e92d4dba5c9f2445b91d.svg",
@@ -20,12 +20,12 @@
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
     "main.b4ee5a54.css.map": "/static/css/main.b4ee5a54.css.map",
-    "main.1d43fa77.js.map": "/static/js/main.1d43fa77.js.map",
+    "main.5b283aad.js.map": "/static/js/main.5b283aad.js.map",
     "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b4ee5a54.css",
-    "static/js/main.1d43fa77.js"
+    "static/js/main.5b283aad.js"
   ]
 }
