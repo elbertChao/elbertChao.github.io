@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 
 function Particle() {
+  const [particleCount, setParticleCount] = useState(140);
+
+  useEffect(() => {
+    const updateCount = () => {
+      setParticleCount(window.innerWidth <= 767 ? 70 : 140);
+    };
+
+    updateCount();
+    window.addEventListener("resize", updateCount);
+    return () => window.removeEventListener("resize", updateCount);
+  }, []);
+
   return (
     <Particles
       id="tsparticles"
+      className="particles-layer"
       params={{
         particles: {
           number: {
-            value: 160,
+            value: particleCount,
             density: {
               enable: true,
               value_area: 1500,

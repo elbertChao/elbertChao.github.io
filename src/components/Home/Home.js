@@ -1,14 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/PortfolioImg.png";
-import Particle from "../Particle";
+import HomeHeadshot from "./HomeHeadshot";
 import Type from "./Type";
 
 function Home() {
   return (
     <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -40,12 +39,7 @@ function Home() {
             </Col>
 
             <Col md={5} className="home-illustration">
-              <img
-                src={myImg}
-                alt="headshot"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
+              <HomeHeadshot src={myImg} alt="Elbert Chao headshot" />
             </Col>
           </Row>
         </Container>

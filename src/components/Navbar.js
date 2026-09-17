@@ -90,6 +90,7 @@ function NavBar() {
               <Button
                 href="https://github.com/elbertChao/elbertChao.github.io"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="fork-btn-inner"
               >
                 <CgGitFork style={{ fontSize: "1.2em" }} />{" "}

@@ -26,20 +26,20 @@ function ProjectCards(props) {
 
         <div className="project-link-buttons mt-auto">
           {props.ghLink && (
-            <Button variant="primary" href={props.ghLink} target="_blank">
+            <Button variant="primary" href={props.ghLink} target="_blank" rel="noopener noreferrer">
               <BsGithub /> &nbsp;
               {props.isBlog ? "Blog" : "GitHub"}
             </Button>
           )}
 
           {!props.isBlog && props.demoLink && (
-            <Button variant="primary" href={props.demoLink} target="_blank">
+            <Button variant="primary" href={props.demoLink} target="_blank" rel="noopener noreferrer">
               <CgWebsite /> &nbsp;Demo
             </Button>
           )}
 
           {props.thesisLink && (
-            <Button variant="primary" href={props.thesisLink} target="_blank">
+            <Button variant="primary" href={props.thesisLink} target="_blank" rel="noopener noreferrer">
               <FaFileAlt /> &nbsp;Thesis
             </Button>
           )}

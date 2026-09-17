@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import spg from "../../Assets/Projects/spg.jpg";
 import pygamePirates from "../../Assets/Projects/pygamePirates.png";
 import formfixer from "../../Assets/Projects/formfixer.png";
@@ -13,7 +12,6 @@ import srMedt from "../../Assets/Projects/sr-medt.png";
 function Projects() {
   return (
     <Container fluid className="project-section" id="project">
-      <Particle />
       <Container>
         <p className="intro-badge">Featured Portfolio Projects</p>
         <h1 className="project-heading">

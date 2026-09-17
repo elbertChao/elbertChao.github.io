@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import Toolstack from "./Toolstack";
@@ -8,7 +7,6 @@ import Toolstack from "./Toolstack";
 function About() {
   return (
     <Container fluid className="about-section" id="about">
-      <Particle />
       <Container>
         <p className="intro-badge">About Me</p>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
@@ -21,7 +19,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Quick <strong className="purple">Background</strong>
+              <strong className="purple">Background</strong>
             </h1>
             <Aboutcard />
           </Col>

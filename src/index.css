@@ -1,8 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Raleway", serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #14102a;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
+  background-attachment: fixed;
+  overflow-x: clip;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

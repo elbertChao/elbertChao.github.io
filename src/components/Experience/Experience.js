@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import { AiOutlineDownload } from "react-icons/ai";
-import Particle from "../Particle";
 import pdf from "../../Assets/ResElbertC.pdf";
 import experiences from "../../data/experience";
 import ExperienceTimeline from "./ExperienceTimeline";
@@ -10,7 +9,6 @@ import ExperienceTimeline from "./ExperienceTimeline";
 function Experience() {
   return (
     <Container fluid className="experience-section" id="experience">
-      <Particle />
       <Container>
         <p className="intro-badge">Experience</p>
         <h1 className="project-heading">
@@ -23,7 +21,7 @@ function Experience() {
         <ExperienceTimeline experiences={experiences} />
 
         <Row style={{ justifyContent: "center", position: "relative", paddingTop: "24px" }}>
-          <Button variant="primary" href={pdf} target="_blank" style={{ maxWidth: "250px" }}>
+          <Button variant="primary" href={pdf} target="_blank" rel="noopener noreferrer" style={{ maxWidth: "250px" }}>
             <AiOutlineDownload />
             &nbsp;Download CV
           </Button>

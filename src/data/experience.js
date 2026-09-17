@@ -1,15 +1,20 @@
+import pinterestLogo from "../Assets/Experience/pinterest-logo.png";
+import westernLogo from "../Assets/Experience/western-logo.png";
+import pmaLogo from "../Assets/Experience/pma-logo.png";
+import fastLogo from "../Assets/Experience/fast-logo.png";
+
 const experiences = [
   {
     id: "pinterest",
     company: "Pinterest",
-    role: "Machine Learning Intern, User Understanding",
-    location: "San Francisco, CA",
+    role: "Machine Learning Intern",
+    location: "Toronto, ON",
     startYear: 2026,
     startMonth: 5,
     endYear: 2026,
     endMonth: 8,
     isCurrent: false,
-    logo: null,
+    logo: pinterestLogo,
     logoInitials: "P",
     techStack: [
       "PyTorch",
@@ -36,7 +41,7 @@ const experiences = [
     endYear: null,
     endMonth: null,
     isCurrent: true,
-    logo: null,
+    logo: westernLogo,
     logoInitials: "WU",
     techStack: ["Python", "PyTorch", "CNNs", "Transformers"],
     highlights: [
@@ -55,7 +60,7 @@ const experiences = [
     endYear: 2025,
     endMonth: 8,
     isCurrent: false,
-    logo: null,
+    logo: pmaLogo,
     logoInitials: "PM",
     techStack: ["Python", "FastAPI", "OpenAI API", "MongoDB"],
     highlights: [
@@ -74,7 +79,7 @@ const experiences = [
     endYear: 2025,
     endMonth: 4,
     isCurrent: false,
-    logo: null,
+    logo: fastLogo,
     logoInitials: "F",
     techStack: ["Next.js", "Python", "Flask", "Nginx", "PM2"],
     highlights: [

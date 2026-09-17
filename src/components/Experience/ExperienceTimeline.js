@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { ImPointRight } from "react-icons/im";
+import { IoChevronDown } from "react-icons/io5";
 import ExperienceLogo from "./ExperienceLogo";
 import {
   getDateRangeLabel,
@@ -18,11 +19,30 @@ const AXIS_LABELS = [
 ];
 
 function ExperienceTimeline({ experiences }) {
-  const [expandedId, setExpandedId] = useState(null);
+  const [expandedIds, setExpandedIds] = useState(() => new Set());
 
   const toggleExpanded = (id) => {
-    setExpandedId((current) => (current === id ? null : id));
+    setExpandedIds((current) => {
+      const next = new Set(current);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
+      return next;
+    });
   };
+
+  const expandAll = () => {
+    setExpandedIds(new Set(experiences.map((experience) => experience.id)));
+  };
+
+  const collapseAll = () => {
+    setExpandedIds(new Set());
+  };
+
+  const allExpanded = expandedIds.size === experiences.length;
+  const hasExpanded = expandedIds.size > 0;
 
   return (
     <div className="experience-timeline">
@@ -37,11 +57,39 @@ function ExperienceTimeline({ experiences }) {
         </div>
       </div>
 
+      <div className="experience-timeline-controls">
+        <p className="experience-interaction-hint">
+          Click <strong>View highlights</strong> on any role to keep details open. You can open
+          multiple panels at once.
+        </p>
+        <div className="experience-timeline-actions">
+          <button
+            type="button"
+            className="experience-action-btn"
+            onClick={expandAll}
+            disabled={allExpanded}
+            aria-label="Expand all experience panels"
+          >
+            Expand all
+          </button>
+          <button
+            type="button"
+            className="experience-action-btn experience-action-btn-secondary"
+            onClick={collapseAll}
+            disabled={!hasExpanded}
+            aria-label="Collapse all experience panels"
+          >
+            Collapse all
+          </button>
+        </div>
+      </div>
+
       {experiences.map((experience, index) => {
-        const isExpanded = expandedId === experience.id;
+        const isExpanded = expandedIds.has(experience.id);
         const position = getTimelinePosition(experience);
         const dateRange = getDateRangeLabel(experience);
         const duration = getDurationLabel(experience);
+        const detailsId = `experience-details-${experience.id}`;
 
         return (
           <article
@@ -53,19 +101,7 @@ function ExperienceTimeline({ experiences }) {
               <span className="experience-timeline-dot" />
             </div>
 
-            <div
-              className="experience-card"
-              onClick={() => toggleExpanded(experience.id)}
-              onKeyDown={(event) => {
-                if (event.key === "Enter" || event.key === " ") {
-                  event.preventDefault();
-                  toggleExpanded(experience.id);
-                }
-              }}
-              role="button"
-              tabIndex={0}
-              aria-expanded={isExpanded}
-            >
+            <div className="experience-card">
               <div className="experience-duration-track" aria-hidden="true">
                 <span
                   className="experience-duration-bar"
@@ -73,14 +109,16 @@ function ExperienceTimeline({ experiences }) {
                 />
               </div>
 
-              <div className="experience-card-header">
-                <div className="experience-card-top">
+              <div className="experience-card-header experience-card-split">
+                <div className="experience-card-logo-panel">
                   <ExperienceLogo
                     logo={experience.logo}
                     initials={experience.logoInitials}
                     company={experience.company}
                   />
+                </div>
 
+                <div className="experience-card-content">
                   <div className="experience-card-title-block">
                     <div className="experience-card-meta">
                       <span className="experience-date-range">{dateRange}</span>
@@ -88,27 +126,42 @@ function ExperienceTimeline({ experiences }) {
                       {experience.isCurrent && (
                         <span className="experience-current-badge">Current</span>
                       )}
+                      {isExpanded && (
+                        <span className="experience-open-badge">Open</span>
+                      )}
                     </div>
                     <h3 className="experience-company">{experience.company}</h3>
                     <p className="experience-role">{experience.role}</p>
                     <p className="experience-location">{experience.location}</p>
                   </div>
-                </div>
 
-                <div className="experience-tech-stack">
-                  {experience.techStack.map((tech) => (
-                    <span key={tech} className="experience-tech-pill">
-                      {tech}
-                    </span>
-                  ))}
+                  <div className="experience-tech-stack">
+                    {experience.techStack.map((tech) => (
+                      <span key={tech} className="experience-tech-pill">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-
-                <p className="experience-hover-hint">
-                  {isExpanded ? "Highlights" : "Hover or tap to view highlights"}
-                </p>
               </div>
 
-              <div className="experience-card-details">
+              <button
+                type="button"
+                className="experience-expand-trigger"
+                onClick={() => toggleExpanded(experience.id)}
+                aria-expanded={isExpanded}
+                aria-controls={detailsId}
+              >
+                <span className="experience-expand-trigger-label">
+                  {isExpanded ? "Hide highlights" : "View highlights"}
+                </span>
+                <IoChevronDown
+                  className={`experience-expand-icon ${isExpanded ? "is-open" : ""}`}
+                  aria-hidden="true"
+                />
+              </button>
+
+              <div id={detailsId} className="experience-card-details">
                 <ul className="experience-highlights">
                   {experience.highlights.map((highlight) => (
                     <li key={highlight}>
