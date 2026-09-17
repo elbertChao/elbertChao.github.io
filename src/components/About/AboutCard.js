@@ -8,21 +8,15 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hello! My name is <span className="purple">Elbert Chao</span>
-            . I am a <span className="purple">Canadian of Chinese descent</span> and currently reside in <span className="purple">Toronto, Ontario</span>.
-            <br />
-            <br />
-            Currently, I am doing an part-time internship at <span className="purple">PM Accelerator</span> as a Software Engineer - AI/ML Intern.
-            Recently I have graduated <span className="purple">Western University</span> with a <span className="purple">CGPA of 3.7 </span>
-            and finished strong with a <span className="purple"> 3.9 GPA.</span> in my final year.
-            <br />
-            <br />
-            I aspire to be a future software developer possibly in either <span className="purple">Front-End/Full-Stack or Machine Learning.</span>
-            <br />
-            <br />
-            Apart from coding, my hobbies involve:
+            I&apos;m <span className="purple">Elbert Chao</span>, an ML engineer based in{" "}
+            <span className="purple">Toronto, Ontario</span>. I recently interned on Pinterest&apos;s
+            User Understanding team and am pursuing an MESc in Software Engineering at{" "}
+            <span className="purple">Western University</span> (GPA 4.0).
           </p>
-          <ul>
+          <p style={{ textAlign: "justify", marginTop: "16px", marginBottom: 0 }}>
+            Outside of work: video games, biking, and working out.
+          </p>
+          <ul style={{ marginTop: "16px", marginBottom: 0 }}>
             <li className="about-activity">
               <ImPointRight /> Video Games
             </li>
@@ -33,11 +27,6 @@ function AboutCard() {
               <ImPointRight /> Working Out
             </li>
           </ul>
-
-          {/* <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Elbert</footer> */}
         </blockquote>
       </Card.Body>
     </Card>

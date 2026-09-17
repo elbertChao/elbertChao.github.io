@@ -2,20 +2,9 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/PortfolioImg.png";
 import Particle from "../Particle";
-import Home2 from "./Home2";
 import Type from "./Type";
 
 function Home() {
-  const scrollToProjects = (event) => {
-    event.preventDefault();
-    const section = document.getElementById("project");
-    if (!section) return;
-
-    const navOffset = 90;
-    const top = section.getBoundingClientRect().top + window.scrollY - navOffset;
-    window.scrollTo({ top, behavior: "smooth" });
-  };
-
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -32,8 +21,8 @@ function Home() {
               </h1>
 
               <p className="hero-subtext">
-                Building software and machine learning experiences that move from prototype to
-                production.
+                ML engineer focused on recommendation systems, retrieval models, and
+                production-ready AI.
               </p>
 
               <div className="typewriter-wrap">
@@ -41,19 +30,26 @@ function Home() {
               </div>
 
               <div className="hero-cta-group">
-                <a href="#project" className="hero-cta primary-cta" onClick={scrollToProjects}>
+                <a href="#experience" className="hero-cta primary-cta">
+                  View Experience
+                </a>
+                <a href="#project" className="hero-cta secondary-cta">
                   View Projects
                 </a>
               </div>
             </Col>
 
             <Col md={5} className="home-illustration">
-              <img src={myImg} alt="headshot" className="img-fluid" style={{ maxHeight: "450px" }} />
+              <img
+                src={myImg}
+                alt="headshot"
+                className="img-fluid"
+                style={{ maxHeight: "450px" }}
+              />
             </Col>
           </Row>
         </Container>
       </Container>
-      <Home2 />
     </section>
   );
 }

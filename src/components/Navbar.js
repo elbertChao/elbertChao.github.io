@@ -4,15 +4,14 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { CgGitFork } from "react-icons/cg";
+import { CgGitFork, CgWorkAlt } from "react-icons/cg";
 import {
   AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -61,8 +60,8 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href="#about" onClick={() => updateExpanded(false)}>
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              <Nav.Link href="#experience" onClick={() => updateExpanded(false)}>
+                <CgWorkAlt style={{ marginBottom: "2px" }} /> Experience
               </Nav.Link>
             </Nav.Item>
 
@@ -76,8 +75,14 @@ function NavBar() {
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link href="#resume" onClick={() => updateExpanded(false)}>
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              <Nav.Link href="#about" onClick={() => updateExpanded(false)}>
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link href="#contact" onClick={() => updateExpanded(false)}>
+                <MdOutlineMailOutline style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
 

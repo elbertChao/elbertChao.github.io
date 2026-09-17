@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
+import Experience from "./components/Experience/Experience";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -27,9 +27,9 @@ function App() {
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <Home />
-        <About />
+        <Experience />
         <Projects />
-        <Resume />
+        <About />
         <Footer />
       </div>
     </>
