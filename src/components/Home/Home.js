@@ -1,8 +1,11 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/PortfolioImg.png";
 import HomeHeadshot from "./HomeHeadshot";
 import Type from "./Type";
+
+const publicUrl = process.env.PUBLIC_URL || "";
+const headshot = `${publicUrl}/headshot.webp`;
+const headshotSm = `${publicUrl}/headshot-sm.webp`;
 
 function Home() {
   return (
@@ -39,7 +42,12 @@ function Home() {
             </Col>
 
             <Col md={5} className="home-illustration">
-              <HomeHeadshot src={myImg} alt="Elbert Chao headshot" />
+              <HomeHeadshot
+                src={headshot}
+                srcSet={`${headshotSm} 520w, ${headshot} 900w`}
+                sizes="(max-width: 767px) 260px, 450px"
+                alt="Elbert Chao headshot"
+              />
             </Col>
           </Row>
         </Container>

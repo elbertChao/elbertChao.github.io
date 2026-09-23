@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo.webp";
 import Button from "react-bootstrap/Button";
 import { CgGitFork, CgWorkAlt } from "react-icons/cg";
 import {
@@ -26,7 +26,7 @@ function NavBar() {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", scrollHandler);
+    window.addEventListener("scroll", scrollHandler, { passive: true });
     return () => window.removeEventListener("scroll", scrollHandler);
   }, []);
 
@@ -39,7 +39,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="#home" className="d-flex" onClick={() => updateExpanded(false)}>
-          <img src={logo} className="img-fluid logo" alt="brand" />
+          <img src={logo} className="img-fluid logo" alt="brand" width={40} height={22} decoding="async" />
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"

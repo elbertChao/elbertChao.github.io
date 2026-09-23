@@ -13,6 +13,8 @@ function ExperienceLogo({ logo, initials, company }) {
         src={logo}
         alt={`${company} logo`}
         className="experience-logo"
+        loading="lazy"
+        decoding="async"
         onError={() => setHasError(true)}
       />
     );

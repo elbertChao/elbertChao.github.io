@@ -13,7 +13,14 @@
     <title>Elbert | Portfolio</title>
     <meta name="description"
       content="Self Developed personal website build with React.js">
-    <!-- <script src="src\index.js" defer></script> -->
+    <link
+      rel="preload"
+      as="image"
+      href="%PUBLIC_URL%/headshot.webp"
+      imagesrcset="%PUBLIC_URL%/headshot-sm.webp 520w, %PUBLIC_URL%/headshot.webp 900w"
+      imagesizes="(max-width: 767px) 260px, 450px"
+      fetchpriority="high"
+    />
   </head>
 
   <body>

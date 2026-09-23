@@ -1,13 +1,13 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import spg from "../../Assets/Projects/spg.jpg";
-import pygamePirates from "../../Assets/Projects/pygamePirates.png";
-import formfixer from "../../Assets/Projects/formfixer.png";
-import strawberryWeb from "../../Assets/Projects/berryVision-v1.0.png";
-import jobAssist from "../../Assets/Projects/job_assist.jpg";
-import warrenBuffett from "../../Assets/Projects/warren_buffett.jpg";
-import srMedt from "../../Assets/Projects/sr-medt.png";
+import spg from "../../Assets/Projects/spg.webp";
+import pygamePirates from "../../Assets/Projects/pygamePirates.webp";
+import formfixer from "../../Assets/Projects/formfixer.webp";
+import strawberryWeb from "../../Assets/Projects/berryVision-v1.0.webp";
+import jobAssist from "../../Assets/Projects/job_assist.webp";
+import warrenBuffett from "../../Assets/Projects/warren_buffett.webp";
+import srMedt from "../../Assets/Projects/sr-medt.webp";
 
 function Projects() {
   return (

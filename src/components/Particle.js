@@ -2,11 +2,11 @@ import React, { useEffect, useState } from "react";
 import Particles from "react-tsparticles";
 
 function Particle() {
-  const [particleCount, setParticleCount] = useState(140);
+  const [particleCount, setParticleCount] = useState(48);
 
   useEffect(() => {
     const updateCount = () => {
-      setParticleCount(window.innerWidth <= 767 ? 70 : 140);
+      setParticleCount(window.innerWidth <= 767 ? 22 : 48);
     };
 
     updateCount();
@@ -59,7 +59,7 @@ function Particle() {
             },
           },
         },
-        retina_detect: true,
+        retina_detect: false,
       }}
     />
   );

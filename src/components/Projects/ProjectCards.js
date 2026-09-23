@@ -8,7 +8,13 @@ import { FaFileAlt } from "react-icons/fa";
 function ProjectCards(props) {
   return (
     <Card className="project-card-view">
-      <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+      <Card.Img
+        variant="top"
+        src={props.imgPath}
+        alt={`${props.title} preview`}
+        loading="lazy"
+        decoding="async"
+      />
       <Card.Body>
         {props.status && <p className="project-status-badge">{props.status}</p>}
         <Card.Title>{props.title}</Card.Title>

@@ -3,7 +3,7 @@ import React, { useRef, useState, useEffect } from "react";
 const MAX_ROTATE = 12;
 const MAX_TRANSLATE = 10;
 
-function HomeHeadshot({ src, alt }) {
+function HomeHeadshot({ src, srcSet, sizes, alt }) {
   const stageRef = useRef(null);
   const [tilt, setTilt] = useState({ rotateX: 0, rotateY: 0, translateX: 0, translateY: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -67,7 +67,18 @@ function HomeHeadshot({ src, alt }) {
         className={`home-headshot-tilt ${isHovering ? "is-hovering" : ""}`}
         style={{ transform: canTilt ? transform : undefined }}
       >
-        <img src={src} alt={alt} className="img-fluid home-headshot" />
+        <img
+          src={src}
+          srcSet={srcSet}
+          sizes={sizes}
+          alt={alt}
+          className="img-fluid home-headshot"
+          width={450}
+          height={450}
+          decoding="async"
+          fetchPriority="high"
+          loading="eager"
+        />
       </div>
     </div>
   );

@@ -12,21 +12,38 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, setLoad] = useState(true);
+  const [showParticles, setShowParticles] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
+    let revealTimer;
 
-    return () => clearTimeout(timer);
+    const reveal = () => {
+      revealTimer = window.setTimeout(() => setLoad(false), 120);
+    };
+
+    if (document.readyState === "complete") {
+      reveal();
+    } else {
+      window.addEventListener("load", reveal, { once: true });
+    }
+
+    const fallbackTimer = window.setTimeout(() => setLoad(false), 500);
+    const particleTimer = window.setTimeout(() => setShowParticles(true), 350);
+
+    return () => {
+      window.removeEventListener("load", reveal);
+      window.clearTimeout(revealTimer);
+      window.clearTimeout(fallbackTimer);
+      window.clearTimeout(particleTimer);
+    };
   }, []);
 
   return (
     <>
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
-        <Particle />
+        {showParticles && <Particle />}
         <Navbar />
         <Home />
         <Experience />

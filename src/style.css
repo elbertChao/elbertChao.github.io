@@ -41,7 +41,7 @@ button:focus {
 }
 
 #preloader-none {
-  opacity: 0;
+  display: none;
 }
 
 #no-scroll {
@@ -296,7 +296,7 @@ button:focus {
   position: absolute;
   inset: -4%;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-back.png);
+  background-image: var(--image-gradient), url(./Assets/home-back.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -394,16 +394,17 @@ button:focus {
 .home-headshot-tilt {
   transform-style: preserve-3d;
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
 }
 
 .home-headshot-tilt.is-hovering {
   transition: transform 0.12s ease-out;
+  will-change: transform;
 }
 
 .home-headshot {
   max-height: 450px;
   width: auto;
+  aspect-ratio: 1 / 1;
   display: block;
   pointer-events: none;
   user-select: none;
@@ -420,6 +421,10 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .home-section::before {
+    background-image: var(--image-gradient), url(./Assets/home-back-sm.webp);
+  }
+
   .home-section {
     min-height: auto;
     padding-top: 16px !important;
