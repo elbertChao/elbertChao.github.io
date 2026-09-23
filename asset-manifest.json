@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.e85779b6.css",
-    "main.js": "/static/js/main.332cccf3.js",
-    "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
-    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
-    "static/media/home-back.png": "/static/media/home-back.b79ed42e005d170c4af9.png",
-    "static/media/PortfolioImg.png": "/static/media/PortfolioImg.28adf909e2ab8c329679.png",
-    "static/media/pygamePirates.png": "/static/media/pygamePirates.ed8aac0e24e7e498b2a7.png",
-    "static/media/berryVision-v1.0.png": "/static/media/berryVision-v1.0.ab285d7429a27408439a.png",
-    "static/media/sr-medt.png": "/static/media/sr-medt.edfa2c39a96c81c2201b.png",
-    "static/media/warren_buffett.jpg": "/static/media/warren_buffett.0e4b66312774e3a879c4.jpg",
+    "main.css": "/static/css/main.0bbf336b.css",
+    "main.js": "/static/js/main.5ff96246.js",
+    "static/js/415.fc063c41.chunk.js": "/static/js/415.fc063c41.chunk.js",
+    "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
+    "static/media/home-back.webp": "/static/media/home-back.11d5173b85e289a84a04.webp",
     "static/media/ResElbertC.pdf": "/static/media/ResElbertC.7d628839f52135a44aef.pdf",
-    "static/media/spg.jpg": "/static/media/spg.088ad8947aece88bf6a7.jpg",
-    "static/media/job_assist.jpg": "/static/media/job_assist.91b61676e14a3ac71fe6.jpg",
-    "static/media/formfixer.png": "/static/media/formfixer.97ec38c5396c8a415058.png",
-    "static/media/logo.png": "/static/media/logo.cc91d960fe8c646a1d73.png",
+    "static/media/home-back-sm.webp": "/static/media/home-back-sm.d2173239d0e9e3354cb9.webp",
+    "static/media/berryVision-v1.0.webp": "/static/media/berryVision-v1.0.af39f4952138abec8eb6.webp",
+    "static/media/warren_buffett.webp": "/static/media/warren_buffett.3b827377166434f2eebc.webp",
+    "static/media/sr-medt.webp": "/static/media/sr-medt.84ec44cfbe3c2cec3084.webp",
+    "static/media/pygamePirates.webp": "/static/media/pygamePirates.c1cc1eb40f9b7329be12.webp",
     "static/media/pinterest-logo.png": "/static/media/pinterest-logo.8f0c34f44019fff319e4.png",
+    "static/media/spg.webp": "/static/media/spg.dcb3bf2dd310c8a57af5.webp",
+    "static/media/job_assist.webp": "/static/media/job_assist.30c76c927fcdf59f0b7f.webp",
+    "static/media/formfixer.webp": "/static/media/formfixer.71a053fec715881c77dd.webp",
     "static/media/western-logo.png": "/static/media/western-logo.9797202299a997927099.png",
     "static/media/fast-logo.png": "/static/media/fast-logo.8db1af0d9e3ccfdbdf51.png",
+    "static/media/logo.webp": "/static/media/logo.37bf19f0a7cd5f293f48.webp",
     "static/media/pre.svg": "/static/media/pre.d4812f51c8c80976eaab.svg",
     "index.html": "/index.html",
-    "main.e85779b6.css.map": "/static/css/main.e85779b6.css.map",
-    "main.332cccf3.js.map": "/static/js/main.332cccf3.js.map",
-    "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
-    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+    "main.0bbf336b.css.map": "/static/css/main.0bbf336b.css.map",
+    "main.5ff96246.js.map": "/static/js/main.5ff96246.js.map",
+    "415.fc063c41.chunk.js.map": "/static/js/415.fc063c41.chunk.js.map",
+    "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e85779b6.css",
-    "static/js/main.332cccf3.js"
+    "static/css/main.0bbf336b.css",
+    "static/js/main.5ff96246.js"
   ]
 }
