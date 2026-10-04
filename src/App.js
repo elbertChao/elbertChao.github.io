@@ -6,6 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience/Experience";
+import Publications from "./components/Publications/Publications";
 import Particle from "./components/Particle";
 import "./style.css";
 import "./App.css";
@@ -47,6 +48,7 @@ function App() {
         <Navbar />
         <Home />
         <Experience />
+        <Publications />
         <Projects />
         <About />
         <Footer />

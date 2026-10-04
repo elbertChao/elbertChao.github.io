@@ -149,7 +149,7 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .navbar {
     padding: 0.65rem 1rem !important;
     font-size: 1.05rem !important;
@@ -168,6 +168,17 @@ button:focus {
     min-height: 44px;
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+  }
+
+  .navbar-nav .nav-link {
+    padding-right: 0.65rem !important;
+    padding-left: 0.65rem !important;
   }
 }
 .navbar-brand {
@@ -1084,6 +1095,30 @@ button:focus {
   z-index: 1;
 }
 
+.publications-section {
+  padding-top: 36px !important;
+  padding-bottom: 80px !important;
+}
+
+.publications-list {
+  max-width: 920px;
+  margin: 36px auto 0;
+}
+
+.publication-card .experience-highlights {
+  margin-top: 16px;
+}
+
+.publication-actions {
+  margin-top: 18px;
+}
+
+.publication-card .publication-logo {
+  background: #050505;
+  padding: 5px;
+  object-fit: contain;
+}
+
 .experience-timeline {
   position: relative;
   max-width: 920px;
@@ -1685,6 +1720,20 @@ button:focus {
   .experience-section {
     padding-top: 48px !important;
     padding-bottom: 48px !important;
+  }
+
+  .publications-section {
+    padding-top: 12px !important;
+    padding-bottom: 48px !important;
+  }
+
+  .publication-card .experience-card-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .publication-card .experience-highlights li {
+    text-align: left;
   }
 
   .project-heading {

@@ -5,6 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.webp";
 import Button from "react-bootstrap/Button";
 import { CgGitFork, CgWorkAlt } from "react-icons/cg";
+import { FaRegFileAlt } from "react-icons/fa";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -34,7 +35,7 @@ function NavBar() {
     <Navbar
       expanded={expand}
       fixed="top"
-      expand="md"
+      expand="lg"
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
@@ -62,6 +63,12 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link href="#experience" onClick={() => updateExpanded(false)}>
                 <CgWorkAlt style={{ marginBottom: "2px" }} /> Experience
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link href="#publications" onClick={() => updateExpanded(false)}>
+                <FaRegFileAlt style={{ marginBottom: "2px" }} /> Publications
               </Nav.Link>
             </Nav.Item>
 
