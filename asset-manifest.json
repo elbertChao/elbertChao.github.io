@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.b7a9032f.css",
-    "main.js": "/static/js/main.935ae170.js",
-    "static/js/415.fc063c41.chunk.js": "/static/js/415.fc063c41.chunk.js",
-    "static/js/787.f6e65957.chunk.js": "/static/js/787.f6e65957.chunk.js",
+    "main.css": "/static/css/main.d1aefdfa.css",
+    "main.js": "/static/js/main.a20a26c4.js",
+    "static/js/415.4d6acbeb.chunk.js": "/static/js/415.4d6acbeb.chunk.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/home-back.webp": "/static/media/home-back.11d5173b85e289a84a04.webp",
     "static/media/ResElbertC.pdf": "/static/media/ResElbertC.3b154da457012856d1e5.pdf",
     "static/media/home-back-sm.webp": "/static/media/home-back-sm.d2173239d0e9e3354cb9.webp",
@@ -17,16 +17,17 @@
     "static/media/formfixer.webp": "/static/media/formfixer.71a053fec715881c77dd.webp",
     "static/media/western-logo.png": "/static/media/western-logo.9797202299a997927099.png",
     "static/media/fast-logo.png": "/static/media/fast-logo.8db1af0d9e3ccfdbdf51.png",
+    "static/media/embc-logo.webp": "/static/media/embc-logo.e3bc70c336603263cdf8.webp",
     "static/media/logo.webp": "/static/media/logo.37bf19f0a7cd5f293f48.webp",
     "static/media/pre.svg": "/static/media/pre.4410c5baaa673cc131da.svg",
     "index.html": "/index.html",
-    "main.b7a9032f.css.map": "/static/css/main.b7a9032f.css.map",
-    "main.935ae170.js.map": "/static/js/main.935ae170.js.map",
-    "415.fc063c41.chunk.js.map": "/static/js/415.fc063c41.chunk.js.map",
-    "787.f6e65957.chunk.js.map": "/static/js/787.f6e65957.chunk.js.map"
+    "main.d1aefdfa.css.map": "/static/css/main.d1aefdfa.css.map",
+    "main.a20a26c4.js.map": "/static/js/main.a20a26c4.js.map",
+    "415.4d6acbeb.chunk.js.map": "/static/js/415.4d6acbeb.chunk.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7a9032f.css",
-    "static/js/main.935ae170.js"
+    "static/css/main.d1aefdfa.css",
+    "static/js/main.a20a26c4.js"
   ]
 }
